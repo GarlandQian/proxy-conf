@@ -15,4 +15,4 @@ rule-providers:
     url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomo.mrs"
 
 +rules:
-  - RULE-SET,adblockmihomo,AdBlockFilter
+  - RULE-SET,adblockmihomo,AdBlock
