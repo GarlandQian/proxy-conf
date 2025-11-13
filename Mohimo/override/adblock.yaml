@@ -1,0 +1,18 @@
+# https://mihomo.party/docs/guide/override/yaml
+proxy-groups+:
+  - name: AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+rule-providers:
+  adblockmihomo:
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+    url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomo.mrs"
+
++rules:
+  - RULE-SET,adblockmihomo,AdBlockFilter
